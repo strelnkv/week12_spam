@@ -6,6 +6,7 @@ const $chat = document.querySelector(".wrapper_output");
 let button = document.querySelector(".button");
 button.addEventListener("click", handleClick);
 button.addEventListener("click", generateRandomPicture);
+button.addEventListener("click", cleanInput);
 
 function handleClick() {
   //див для имени и даты
@@ -75,4 +76,10 @@ const imageArray = [
 function generateRandomPicture() {
   let randomNum = Math.floor(Math.random() * imageArray.length);
   return imageArray[randomNum];
+}
+
+function cleanInput() {
+  $urlInput.value = "";
+  $comInput.value = "";
+  $nameInput.value = "";
 }
