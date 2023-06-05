@@ -60,6 +60,10 @@
         display: flex;
         align-items: center;
         gap: 50px;
+        padding-bottom: 50px;
+      }
+      .avatar {
+        width: 100px;
       }
       .wrapper_output {
         display: flex;
@@ -68,6 +72,20 @@
       .name {
         color: rgb(94, 201, 255);
         font-size: medium;
+        padding-left: 20px;
+      }
+      .nameAv {
+        display: flex;
+        align-items: flex-start;
+      }
+      .namePlusDate {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .date {
+        margin: 0;
       }
     </style>
   </head>
@@ -93,11 +111,6 @@
       </div>
       <div class="wrapper_output">
         <h2>Чат</h2>
-        <div class="img">
-          <img src="" class="avatar" />
-          <p class="name"></p>
-        </div>
-        <p class="commentarea"></p>
       </div>
     </div>
 
